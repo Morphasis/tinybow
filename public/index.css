@@ -1,0 +1,18 @@
+body{
+  background-color: black;
+}
+h3{
+  color: white;
+}
+p{
+  color: white;
+}
+.item-wrapper{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: helvetica;
+}
+.bow-image{
+  max-width: 302px;
+}

@@ -1,0 +1,11 @@
+#IDE files
+.DS_Store
+
+#modules &&  debug logs
+node_modules/
+npm-debug.log
+npm-debug.log.*
+
+#config
+*.env
+.env
