@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+require('dotenv').config()
+
+const stripe = require('stripe')('sk_test_mcNfM3pMtOt5dNeU4FFRfFlw');
 
 app.use(express.static('public'))
 
@@ -14,7 +17,6 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 app.post('/submit-order', function (req, res) {
-  res.send('POST request to the homepage')
   const nodemailer = require('nodemailer');
 
   const transporter = nodemailer.createTransport({
@@ -25,18 +27,30 @@ app.post('/submit-order', function (req, res) {
     }
   });
 
+  const html_string =
+  "email: " + req.body.email + "<br />"
+  + "first name: " + req.body.firstname + "<br />"
+  + "last name: " + req.body.lastname + "<br />"
+  + "address 1: " + req.body.address1 + "<br />"
+  + "address 2: " + req.body.address2 + "<br />"
+  + "country: " + req.body.country + "<br />"
+  + "postcode: " + req.body.postcode + "<br />"
+  + "additional information: " + req.body.additionalinformation + "<br />"
+
   const mailOptions = {
-    from: 'youremail@gmail.com',
-    to: 'myfriend@yahoo.com',
-    subject: 'Sending Email using Node.js',
-    text: 'That was easy!'
+    from: 'tinybowmail@gmail.com',
+    to: 'tinybowmail@gmail.com',
+    subject: 'Incomming Order ' + Math.random().toString(36).substring(7),
+    html: html_string
   };
 
   transporter.sendMail(mailOptions, function(error, info){
     if (error) {
       console.log(error);
+      res.send('Im sorry something has gone wrong with sending your order')
     } else {
       console.log('Email sent: ' + info.response);
+      res.redirect('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8PG4TQCUJA8A4');
     }
   });
 })

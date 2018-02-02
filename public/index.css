@@ -1,6 +1,10 @@
 body{
   background-color: black;
 }
+h1{
+  color: white;
+  text-align: center;
+}
 h3{
   color: white;
 }
@@ -10,9 +14,19 @@ p{
 .item-wrapper{
   max-width: 500px;
   margin: 0 auto;
-  text-align: justify;
+  /* text-align: justify; */
   font-family: helvetica;
+  border: 1px solid white;
+  padding: 20px;
 }
 .bow-image{
-  max-width: 302px;
+  max-width: 100%;
+}
+.form-wrapper{
+  background-color: white;
+  padding: 20px;
+  border-radius: 2px;
+}
+.btn{
+  border-radius: 2px;
 }
