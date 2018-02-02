@@ -3,8 +3,6 @@ const app = express()
 const bodyParser = require('body-parser')
 require('dotenv').config()
 
-const stripe = require('stripe')('sk_test_mcNfM3pMtOt5dNeU4FFRfFlw');
-
 app.use(express.static('public'))
 
 app.use( bodyParser.json() );       // to support JSON-encoded bodies
