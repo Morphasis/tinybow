@@ -1,32 +1,58 @@
-body{
-  background-color: black;
-}
-h1{
-  color: white;
+.button-wrapper{
+  padding-top: 40px;
   text-align: center;
 }
-h3{
-  color: white;
+
+.button-wrapper h3{
+  margin-top: 35px;
 }
-p{
-  color: white;
+
+.button-wrapper p {
+  margin-top: 35px;
 }
-.item-wrapper{
-  max-width: 500px;
-  margin: 0 auto;
-  /* text-align: justify; */
-  font-family: helvetica;
-  border: 1px solid white;
-  padding: 20px;
+.content-wrapper{
+  background-color: #bbbbbb;
+  padding: 40px;
 }
-.bow-image{
-  max-width: 100%;
+
+.content-wrapper-2{
+  background-color: #4d597a;
+  padding: 40px;
 }
-.form-wrapper{
-  background-color: white;
-  padding: 20px;
+
+.image{
+  width: 100%;
+}
+.image-wrapper{
+  position: relative;
+}
+.text-wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  left: 0;
+  right: 0;
+  background-color: #d2d2d273;
+  padding: 15px;
+  padding-top: 10px;
+}
+.btn-position{
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 0;
+  right: 0;
+}
+.content-wrapper .btn-primary{
+  border-color: #152459;
+  background-color: #152459;
   border-radius: 2px;
+  text-align: center;
 }
-.btn{
-  border-radius: 2px;
+body{
+  background-color: #eeeeee;
+}
+a{
+  color: white;
 }

@@ -11,7 +11,6 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 app.get('/', function (req, res) {
-  console.log(process.env.EMAIL_PASSWORD);
   res.render('index')
 })
 app.post('/submit-order', function (req, res) {
