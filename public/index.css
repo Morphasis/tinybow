@@ -1,18 +1,6 @@
-.button-wrapper{
-  padding-top: 40px;
-  text-align: center;
-}
-
-.button-wrapper h3{
-  margin-top: 35px;
-}
-
-.button-wrapper p {
-  margin-top: 35px;
-}
 .content-wrapper{
   background-color: #bbbbbb;
-  padding: 40px;
+  padding: 40px 0 40px 0;
 }
 
 .content-wrapper-2{
@@ -37,23 +25,28 @@
   padding: 15px;
   padding-top: 10px;
 }
-.btn-position{
-  position: absolute;
-  text-align: center;
-  top: 35%;
-  left: 0;
-  right: 0;
-}
 .content-wrapper .btn-primary{
   margin-top: 5px;
   border-color: #152459;
   background-color: #152459;
   border-radius: 2px;
-  text-align: center;
+  min-width: 214px;
 }
 body{
   background-color: #eeeeee;
 }
 a{
-  color: white;
+  color: #152459;
+}
+.unordered-list{
+  text-align: justify;
+  padding: 0px !important;
+}
+.form-wrapper{
+  padding: 0 40px 0 40px;
+}
+
+.button-wrapper{
+  text-align: center;
+  padding: 10px 0 10px 0;
 }

@@ -61,9 +61,19 @@
     </div>
   </div>
   <div class="row content-wrapper">
-    <div id="slide-toggle" class="btn btn-primary">
-      £10 Buy now <br/>
-      (postage included in price)
+    <div class="col-sm-6 button-wrapper">
+      <div id="slide-toggle" class="btn btn-primary">
+        £10 Buy now <br/>
+        (postage included in price)
+      </div>
+    </div>
+    <div class="col-sm-6 button-wrapper">
+      <form action="/download" method="get">
+        <button type="submit" name="button" class="btn btn-primary">Download .obj file <br /> (print yourself)</button>
+      </form>
+    </div>
+    <div class="col-sm-12 text-center" style="padding-top: 20px;">
+      <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G8ZS2PAF2473Y">Buy me coffee (donate link)</a>
     </div>
     <form action="/submit-order" method="post" class="form-wrapper" style="display: none;">
         <div class="row">
@@ -363,7 +373,7 @@
       <div class="row">
         <div class="col-sm-6">
           <h3>What do you get:</h3>
-          <ul>
+          <ul class="unordered-list">
             <li>A bow frame made of a sturdy and tactile black resin</li>
             <li>A nicely wrapped handle with a color of your choice</li>
             <li>Free postage</li>
@@ -374,7 +384,7 @@
         </div>
         <div class="col-sm-6">
           <h3>What is the point:</h3>
-          <ul>
+          <ul class="unordered-list">
             <li>Its primary use is for decoration</li>
             <li>I want to spark creativity in people allow them to build and play with it. I want to see what you come up with not just me !</li>
             <li>It helps me create new items and projects</li>
@@ -385,7 +395,7 @@
     </div>
   </div>
   <div class="row">
-    <p>Contact me: tinybowmail@gmail.com</p>
+    <div>Contact me: tinybowmail@gmail.com</div>
   </div>
 </div>
 

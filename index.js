@@ -10,6 +10,11 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 }));
 
+app.get('/download', function(req, res){
+  var file = __dirname + '/upload-folder/3dprintbow.obj';
+  res.download(file); // Set disposition and send it.
+});
+
 app.get('/', function (req, res) {
   res.render('index')
 })
