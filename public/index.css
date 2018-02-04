@@ -45,6 +45,7 @@
   right: 0;
 }
 .content-wrapper .btn-primary{
+  margin-top: 5px;
   border-color: #152459;
   background-color: #152459;
   border-radius: 2px;
