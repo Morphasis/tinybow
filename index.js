@@ -35,8 +35,9 @@ app.post('/submit-order', function (req, res) {
   + "last name: " + req.body.lastname + "<br />"
   + "address 1: " + req.body.address1 + "<br />"
   + "address 2: " + req.body.address2 + "<br />"
-  + "country: " + req.body.country + "<br />"
+  + "city: " + req.body.city + "<br />"
   + "postcode: " + req.body.postcode + "<br />"
+  + "country: " + req.body.country + "<br />"
   + "additional information: " + req.body.additionalinformation + "<br />"
 
   const mailOptions = {
